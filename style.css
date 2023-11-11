@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  height: 4684px;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --------- header ----------- */
+.container {
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 108px;
+  max-width: 1720px;
+}
+
+.header {
+  min-width: 100%;
+  max-width: 1920px;
+  background-color: #141024;
+  margin: 0 auto;
+  padding: 0 100px 0 100px;
+  height: 108px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+}
+
+.num {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+}
+
+/* --------- start-page ----------- */
+.start-page {
+  height: 972px;
+  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
+  background-color: #141024;
+}
+.start-page__container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.start-page__name {
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+}
+.start-page__intro {
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 20px;
+}
+.start-page__button {
+  height: 79px;
+  width: 260px;
+  color: #fff;
+  background-color: #d52027;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.start-page__button:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 60px;
+  height: 100px;
+  background-color: #fff;
+  filter: blur(30px);
+  transform: skewX(30deg) translateZ(0);
+  transition: 1s;
+  animation-name: slideme;
+  animation-duration: 3s;
+  animation-delay: 0.05s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.start-page__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 783px;
+  height: 917.48px;
+  margin-top: 54px;
+}
+.start-page__circle {
+  position: absolute;
+  background-image: url(img/Ellipse\ 29.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 783px;
+  height: 783px;
+  border: 80px;
+}
+.start-page__girl {
+  position: absolute;
+  background-image: url(img/portrait-smiling-nostalgic-female-student-looking-upper-left-corner-holding-notebooks\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 515.52px;
+  height: 917.48px;
+}
+
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+/* ---------second part----------- */
+.info__container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  top: 120px;
+}
+.info__about {
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.info__count {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 50px;
+  margin-top: 60px;
+}
+.info__number {
+  font-family: Jost;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 112px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #d52027;
+}
+.info__text {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(20, 16, 36, 0.6980392157);
+}
+
+.about__bold {
+  font-weight: 600;
+}
+
+.aftercourse {
+  height: 485px;
+  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
+  background: #f9f9f9;
+  margin-top: 200px;
+}
+.aftercourse__container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  top: 60px;
+}
+.aftercourse__title {
+  font-family: Jost;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.aftercourse__thing {
+  font-family: Jost;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.aftercourse__text {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(20, 16, 36, 0.6980392157);
+}
+.aftercourse__getting {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 50px;
+  margin-top: 60px;
+}
+.aftercourse__practicenote {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+.aftercourse__icon-container {
+  all: unset;
+  position: relative;
+  background-image: url(img/note.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  right: 0;
+}
+.aftercourse__popup-text {
+  display: none;
+  position: absolute;
+  width: 251px;
+  height: 56px;
+  padding: 15px, 20px, 15px, 20px;
+  border-radius: 5px;
+  gap: 10px;
+  box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.1019607843);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.aftercourse .icon-container:hover + .aftercourse__popup-text,
+.aftercourse .icon-container:focus + .aftercourse__popup-text {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
